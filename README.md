@@ -5,6 +5,10 @@ Homebrew formulae and casks for [RemoteBLE](https://github.com/Yahia-Mohammad/re
 ```sh
 brew tap Yahia-Mohammad/tap
 brew install remoteble              # the CLI (added by the remote-ble-tools release workflow)
+
+# Homebrew refuses casks from a third-party tap until the tap is trusted, so the agent
+# needs one extra step. Formulae are unaffected.
+brew trust --cask Yahia-Mohammad/tap/remoteble-agent
 brew install --cask remoteble-agent # the macOS radio-side agent
 ```
 
