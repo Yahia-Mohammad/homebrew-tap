@@ -8,8 +8,8 @@ class Remoteble < Formula
   homepage "https://github.com/Yahia-Mohammad/remote-ble-tools"
   # No `version` stanza: every archive URL ends in remoteble-<platform>-<version>.zip, so
   # Homebrew scans the version from it and `brew audit --strict` rejects restating it.
-  url "https://github.com/Yahia-Mohammad/remote-ble-tools/releases/download/v0.1.1/remoteble-macos-arm64-0.1.1.zip"
-  sha256 "36e6f952a33df949b3ef24e549daa9021753e00d403a8d32bb6ed387004b8fe1"
+  url "https://github.com/Yahia-Mohammad/remote-ble-tools/releases/download/v0.1.2/remoteble-macos-arm64-0.1.2.zip"
+  sha256 "434f1d53fb0a5a3b8d94e0a8771dc1bc28b467bbed04c24114e8abdaeca2ba6f"
   license "Apache-2.0"
 
   depends_on arch: :arm64
