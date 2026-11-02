@@ -2,16 +2,15 @@
 # frozen_string_literal: true
 
 cask "remoteble-agent" do
-  version "0.12.0"
-  sha256 "3cf5ae93349e283174dd1a9e8fb7c1c51f0663b35125157f75fc1d055ac80b32"
+  version "0.15.1"
+  sha256 "a40e6191c5e06b300571f45fc5a294a4498d9a68c2956266e9c5c9c22e80423f"
 
-  url "https://github.com/Yahia-Mohammad/remote-ble/releases/download/v#{version}/remoteble-agent-rs-macos-universal.app.zip",
-      verified: "github.com/Yahia-Mohammad/remote-ble/"
+  url "https://github.com/Yahia-Mohammad/remote-ble/releases/download/v#{version}/remoteble-agent-rs-macos-universal.app.zip"
   name "RemoteBLE Agent"
   desc "Radio-side agent that relays BLE operations to remote clients"
   homepage "https://github.com/Yahia-Mohammad/remote-ble"
 
-  depends_on macos: :big_sur
+  depends_on :macos
 
   app "RemoteBleAgentRs.app"
 
